@@ -4,7 +4,7 @@ select * from
 
 ---Projections
 , round(sum(clarity_2022_turnout)) as turnout_projection 
-,  round(sum(clarity_2022_turnout*dnc_2022_dem_party_support)/sum(clarity_2022_turnout))*100,2) as dem_pct_projection
+,  round((sum(clarity_2022_turnout*dnc_2022_dem_party_support)/sum(clarity_2022_turnout))*100,2) as dem_pct_projection
 
 ----Demographics 
 
